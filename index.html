@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles/basics.css">
+  <link class="custom-style" rel="stylesheet" href="./styles/home.css">
+  
+  <script defer src="main.js"></script>
+  
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+</head>
+<body>
+
+  <div class="card">
+    <div class="img-container">
+      <picture>
+        <source class="image" srcset="./assets/images/illustration-sign-up-desktop.svg" media="(min-width: 780px)">
+        <source class="image" srcset="./assets/images/illustration-sign-up-mobile.svg" media="(max-width: 780px)">
+        <img class="image" src="./assets/images/illustration-sign-up-mobile.svg" alt="product image">
+      </picture>
+    </div>
+
+    <div class="all-text">
+      <h1 class="header">Stay updated!</h1>
+      <p class="main-text">Join 60,000+ product managers receiving monthly updates on:</p>
+      <div class="list">
+        <img src="./assets/images/icon-list.svg" alt="check icon">
+        <p class="check-text">
+          Product discovery and building what matters
+        </p>
+      </div>
+      <div class="list">
+        <img src="./assets/images/icon-list.svg" alt="check icon">
+        <p class="check-text">
+          Measuring to ensure updates are a success
+        </p>
+      </div>
+      <div class="list">
+        <img src="./assets/images/icon-list.svg" alt="check icon">
+        <p class="check-text">
+          And much more!
+        </p>
+      </div>
+      <form class="email-form">
+        <label for="email">Email address</label>
+        <input type="textarea" placeholder="email@company.com" id="email">
+        <span class="error hidden" id="type1">Email is required</span>
+        <span class="error hidden" id="type2">Valid email required</span>
+        <div class="btn-wrapper">
+          <input type="submit" value="Subscribe to monthly newsletter" class="subscribe-btn">
+        </div>
+      </form>
+    </div> 
+  </div>
+
+</body>
+</html>

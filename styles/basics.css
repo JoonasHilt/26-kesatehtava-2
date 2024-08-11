@@ -1,0 +1,23 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Roboto-Light";
+    src: url("../assets/Roboto/Roboto-Light.ttf");
+}
+
+@font-face {
+    font-family: "Roboto-bold";
+    src: url("../assets/Roboto/Roboto-Bold.ttf");
+    font-weight: 700;
+}
+
+html, body, main {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+    font-family: "Roboto-Light";
+    overflow: hidden;
+}

@@ -1,0 +1,90 @@
+/* ### Primary
+
+- Tomato: hsl(4, 100%, 67%)
+
+### Neutral
+
+- Dark Slate Grey: hsl(234, 29%, 20%)
+- Charcoal Grey: hsl(235, 18%, 26%)
+- Grey: hsl(231, 7%, 60%)
+- White: hsl(0, 0%, 100%) */
+
+.card {
+    width: 88%;
+    margin: 0 auto;
+    margin-top: 25vh;
+}
+
+.header {
+    font-size: 2.5rem;
+    font-family: "Roboto-bold";
+    line-height: 100%;
+}
+
+.main-text {
+    font-size: 1rem;
+    line-height: 150%;
+}
+
+.bold-text {
+    font-family: "Roboto-bold";
+}
+
+.dismiss {
+    border: none;
+    border-radius: 0.5rem;
+    width: 88%;
+    background-color: hsl(234, 29%, 20%);
+    padding: 1.2rem;
+
+    color: #FFF;
+    font-family: "Roboto-bold";
+    font-size: 1rem;
+
+    position: fixed;
+    bottom: 30px;    
+    left: 50%;       
+    transform: translateX(-50%);
+}
+
+.dismiss:hover {
+    background-image: linear-gradient(to bottom, #FF6A3A, #FF527B);
+}
+
+.hidden {
+    display: none;
+}
+
+@media (min-width: 780px){
+
+    body {
+        background-color: #36384D;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .card {
+        background-color: #FFF;
+        max-width: 90%;
+        width: 504px;
+
+        border-radius: 20px;
+        padding: 4rem;
+
+        margin: 0;
+    }
+
+    .dismiss {
+        position: static;
+        transform: translate(0);
+        width: 100%;
+        margin-top: 1.5rem;
+    }
+
+    .header {
+        font-size: 3.5rem;
+    }
+
+}
